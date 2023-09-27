@@ -51,8 +51,8 @@ function App() {
       <div>
       <h1>Random Quote Generator By Umair</h1>
       <div className='text-center'>
-     <a id="tweet-quote" href={"https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + randomQuote} target="_blank"><button>Tweet it</button></a></div><div className='text-center'>
-      <button id="new-quote"onClick={getRandomQuote}>Get Random Quote</button></div></div>
+     <a id="tweet-quote" href={"https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + randomQuote} target="_blank"><button  className="btn btn-primary">Tweet it</button></a></div><div className='text-center'>
+      <button id="new-quote"onClick={getRandomQuote} className="btn btn-success">Get Random Quote</button></div></div>
       {randomQuote && (
         <div className="quote">
           <div id="text">{randomQuote.text}</div>
